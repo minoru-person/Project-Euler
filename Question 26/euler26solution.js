@@ -1,4 +1,4 @@
-<script>
+
 //Using Long Division, "longdivisionPartA" function generates the decimal representation for a given dividend/divider.
 //It stores the decimal representation in an array called "array". 
 //the remainder is tracked in the array "arraydividend".
@@ -75,4 +75,4 @@ for(var b = 2; b<1000; b++) {
       var arraydividend = [0];
 }
 console.log(answer1);
-</script>
+
