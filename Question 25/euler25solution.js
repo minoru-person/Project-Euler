@@ -1,4 +1,3 @@
-<script>
 //Set fibonacci number into array. Array is revesed to make counting easier.
 var f1 = [];
 var f2 = [];
@@ -48,4 +47,4 @@ for (var i = 0; i<(f1.length); i++) {
 }
 //execute algorithm
 fibonacciFunction(f1, f2);
-</script>
+
