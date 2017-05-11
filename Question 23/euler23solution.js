@@ -30,7 +30,7 @@ ANSWER
 
 //sumOfAllBelow28214 = Sum of all numbers (below 28124)
 totalSumOfAllBelow28214 = 0;
-for (i=0; i<28214; i++)
+for (var i=0; i<28214; i++)
 {
   totalSumOfAllBelow28214 = totalSumOfAllBelow28214 + i;
 }
@@ -38,7 +38,7 @@ for (i=0; i<28214; i++)
 //abundantBelow28214 = Abundant numbers below 28214 (in Array form)
 var abundantBelow28214 = [];
 
-for (i=12; i<28124; i++){
+for (var i=12; i<28124; i++){
   var n=1;
   var total = 0 ;
   
@@ -60,11 +60,14 @@ var sumOfAbundantBelow28214 = new Set();
 var counter;
 var sumtotal = 0;
 
+var j;
+var k;
+
 for(j=0; j<abundantBelow28214.length; j++)
 {
-   for(i=j; i<abundantBelow28214.length; i++)
+   for(k=j; k<abundantBelow28214.length; k++)
    {
-        counter = abundantBelow28214[i]+abundantBelow28214[j];
+        counter = abundantBelow28214[k]+abundantBelow28214[j];
 		
 		if(counter<28214){
 		 sumOfAbundantBelow28214.add(counter);	
