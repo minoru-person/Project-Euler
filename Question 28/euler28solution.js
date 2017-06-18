@@ -14,7 +14,7 @@
   let finalTotal = 0;
 
   function fourCornerSum(spiral) {
-     let cornerTotal = 0; //this variable needs to be reset for each spiral, therefore it is contained within the function.
+     let cornerTotal = 0; // this variable needs to be reset for each spiral, therefore it is contained within the function.
   
      for (i = spiral*spiral, counter = 1; counter <= 4; i = i-(spiral-1)) {
 	       cornerTotal = cornerTotal + i;
@@ -23,10 +23,10 @@
       finalTotal = finalTotal + cornerTotal;  
   }
 
-  //Sum of corners for all spiral starting from 3 by 3, to 1001 by 1001.  	 				      
+  // Sum of corners for all spiral starting from 3 by 3, to 1001 by 1001.  	 				      
   for (j = 3; j <= 1001; j = j+2) {
         fourCornerSum(j);
   }
 
-  //The value in the middle of the spiral is 1. Add 1 to the final value. 		    
+  // The value in the middle of the spiral is 1. Add 1 to the final value. 		    
   console.log(finalTotal+1);
