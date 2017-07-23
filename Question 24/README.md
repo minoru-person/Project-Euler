@@ -1,4 +1,4 @@
-#Need to improvement comment for algorithm
+#Need to improve comments
 
 Question 24
 
