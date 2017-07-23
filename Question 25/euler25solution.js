@@ -2,7 +2,7 @@
 var f1 = [];
 var f2 = [];
 
-// output two arrays with 1001 elements.
+// output two arrays with 1001 keys.
 // f1 = [0,0,0,.........,0];
 // f2 = [0,0,0,.........,0];
 for(var i = 0; i < 1001; i++){
@@ -10,7 +10,7 @@ for(var i = 0; i < 1001; i++){
  f2.push(0);
 }
 
-// set the first terms to 1.
+// set the first key to 1.
 f1[0]= 1;
 f2[0]= 1;
 
