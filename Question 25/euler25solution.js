@@ -2,7 +2,7 @@
 var f1 = [];
 var f2 = [];
 
-// output two arrays up to 1001 digits long.
+// output two arrays with 1001 elements.
 // f1 = [0,0,0,.........,0];
 // f2 = [0,0,0,.........,0];
 for(var i = 0; i < 1001; i++){
