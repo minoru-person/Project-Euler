@@ -28,7 +28,7 @@ for(var n = 9; -1 < n; n--)	{
 	value = Math.ceil(value);        // 3
 	value = value - 1;               // 2, the millionth permutation starts with a 2.
 
-	array.push(numberList[value]);   // Add number 3rd item of numberList to array, 
+	array.push(numberList[value]);   // Add 3rd item of numberList to array, 
 	                                 // i.e. array = [2]
 
 	numberList.splice(value, 1);     // Remove 3rd item from numberList. 
