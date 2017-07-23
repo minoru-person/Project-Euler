@@ -26,12 +26,15 @@ Based on that it is clear that the millionth permutation is in the third interva
 for(var n = 9; -1 < n; n--)	{	
 	value = counter / factorial(n);	 // 1,000,000/362880 = 2.76
 	value = Math.ceil(value);        // 3
-	value = value - 1;               // 2
+	value = value - 1;               // 2, the millionth permutation starts with a 2.
 
-	array.push(numberList[value]);    // array = [2]  
+	array.push(numberList[value]);   // Add number 3rd item of numberList to array, 
+	                                 // i.e. array = [2]
 
-	numberList.splice(value, 1);      
-	counter = counter - (value*factorial(n));    
+	numberList.splice(value, 1);     // Remove 3rd item from numberList. 
+	                                 // i.e. numberList = [0,1,3,4,5,6,7,8,9] 
+	
+	counter = counter - (value*factorial(n)); // 274240 = 100000 - (2*362800)   
 }
 
 console.log(array);			 
