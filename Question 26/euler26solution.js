@@ -22,41 +22,41 @@ NOTE: the divider remains the same throughout the whole function.
 */
 
 function longdivisionPartA(dividend, divider){
-       while (dividend < divider) {
-               dividend = dividend * 10;
-               array.push(0); 
-       } 
+    while (dividend < divider) {
+        dividend = dividend * 10;
+            array.push(0); 
+        } 
  
-       arraydividend.push(dividend);
+        arraydividend.push(dividend);
  
-  return longdivisionPartB(dividend, divider);
+    return longdivisionPartB(dividend, divider);
 } 
 
 // longdivisionPartB is the rest of the long division. 
 
 function longdivisionPartB(dividend, divider){  
-       var i = 9; 
-       while( dividend < divider*i ){
-                   i--;           
-       } 
+    var i = 9; 
+    while( dividend < divider*i ){
+        i--;           
+    } 
   
-       array.push(i);
+    array.push(i);
   
-  // The New dividend is calculated
-  dividend = dividend - divider * i;
-  dividend = dividend * 10;
+    // The New dividend is calculated
+    dividend = dividend - divider * i;
+    dividend = dividend * 10;
   
-  // if the new dividend is the same as the one found in arraydividend, the function is terminated.
-  for(i = 0; i < arraydividend.length; i++){
-    if(arraydividend[i] == dividend){
-	   return array;
-       }
-   }
+    // if the new dividend is the same as the one found in arraydividend, the function is terminated.
+    for(i = 0; i < arraydividend.length; i++){
+        if(arraydividend[i] == dividend){
+	    return array;
+        }
+    }
 	
-   arraydividend.push(dividend);
+    arraydividend.push(dividend);
 	
-   // The function is repeated, until the recurring decimal is determined 
-   return longdivisionPartB(dividend, divider);
+    // The function is repeated, until the recurring decimal is determined 
+    return longdivisionPartB(dividend, divider);
 }
 
 /* 
@@ -70,14 +70,17 @@ Output the answer, value of answer1.
 
 var array1 = 0;
 var answer1;
+
 for(var b = 2; b < 1000; b++) {
     longdivisionPartA(1, b);
-	if(array.length > array1){
-	    array1 = array.length;
-	   answer1 = b;
-	}
-	  var array = [];
-      var arraydividend = [0];
-}
-console.log(answer1);
 
+    if(array.length > array1){
+        array1 = array.length;
+	answer1 = b;
+    }
+
+    var array = [];
+    var arraydividend = [0];
+}
+
+console.log(answer1);
